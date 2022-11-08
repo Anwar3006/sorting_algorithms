@@ -3,12 +3,9 @@
 /**
  * bubble_sort - Algorithm rearranges array by swapping two out-of-place
  *               elements
- * 
  * @array: array to sort 
  * @size: size of array
  */
-
-
 void bubble_sort(int *array, size_t size)
 {
     bool swapped = false;
