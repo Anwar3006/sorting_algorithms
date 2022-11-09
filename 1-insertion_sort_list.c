@@ -9,7 +9,7 @@
  */
 void swapNode(listint_t **head, listint_t **A, listint_t *B)
 {
-    A->next = B->next;
+    (*A)->next = B->next;
     if (B->next != NULL)
         B->next->prev = (*A);
     B->prev = (*A)->prev;
@@ -19,7 +19,6 @@ void swapNode(listint_t **head, listint_t **A, listint_t *B)
     else
         *head = B;
     (*A)->prev = B;
-    // to update (*A)
     (*A) = B->prev;
 }
 
